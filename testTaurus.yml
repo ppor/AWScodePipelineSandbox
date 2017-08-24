@@ -1,0 +1,10 @@
+execution:
+   scenario: simple
+   concurrency: 20
+   hold-for: 30s
+
+scenarios:
+  simple:
+    requests:
+      - url: 'https://api.openweathermap.org/data/2.5/'
+        method: GET
